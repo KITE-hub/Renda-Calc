@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Renda-Calc/static/css/main.0c4ad802.css",
+    "main.js": "/Renda-Calc/static/js/main.9cdea888.js",
+    "static/js/453.0ccfd63e.chunk.js": "/Renda-Calc/static/js/453.0ccfd63e.chunk.js",
+    "index.html": "/Renda-Calc/index.html",
+    "main.0c4ad802.css.map": "/Renda-Calc/static/css/main.0c4ad802.css.map",
+    "main.9cdea888.js.map": "/Renda-Calc/static/js/main.9cdea888.js.map",
+    "453.0ccfd63e.chunk.js.map": "/Renda-Calc/static/js/453.0ccfd63e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c4ad802.css",
+    "static/js/main.9cdea888.js"
+  ]
+}
