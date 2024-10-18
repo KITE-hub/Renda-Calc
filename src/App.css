@@ -1,38 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: "Roboto","Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  font-size: 15px;
+  margin: 0;
+  width: 100vw;
   min-height: 100vh;
+  background-color: rgb(242, 245, 248);
+}
+
+header{
   display: flex;
-  flex-direction: column;
+  background-color: rgb(54, 64, 74);
+  padding: 5px 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  margin: 0;
   align-items: center;
+}
+
+img{
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.title{
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.15em;
+  margin: 0px auto 0px 15px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;  /* Firefox */
+  -webkit-appearance: none;    /* Chrome, Safari */
+  appearance: none;            /* その他のブラウザ */
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;    /* Chrome, Safariのカウンタ非表示 */
+  margin: 0;
+}
+
+.input{
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
+
+.inputField{
+  background-color: white;
+  width: 345px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 12px 0px;
+}
+
+.inputField1,.inputField2,.inputField3{
+  display: flex;
+  padding: 15px;
+  margin: 0px 0px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+button{
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  border:0;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0px 1px;    
+  color: #999 ;
+  line-height: 1;
+  font-size: 1.5em; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:hover{
+  background-color: rgb(242, 245, 248);
+}
+
+.inputboxspecial{
+  position: relative;
+  width: 77px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.inputbox{
+  position: relative;
+  width: 65px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.inputbox:hover{
+  border: 1px solid rgb(130, 130, 190);
+}
+
+label{
+  font-size:0.7rem;
+  position: absolute;
+  left: 4px;
+  top: -0.35rem;
+  padding: 0px 2px;
+  color: #555;
+  background-color: white;
+}
+
+.inputText{
+  align-items: center;
+  font-weight: 400;
+  margin: 0px 12px;
+}
+
+input{
+  width: 63px;
+  height: 42px;
+  border: 0;
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 0px 2px 0px 0px;
+  text-align: right;
+}
+
+select{
+  width: 75px;
+  height: 42px;
+  border: 0;
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 0px 2px 0px 0px;
+  text-align: right;
+}
+
+hr{
+  max-width: calc(95% - 50px);
+  border: none; /* デフォルトのボーダーを消す */
+  height: 1px; /* 太さを指定 */
+  background-color: rgb(192, 192, 192); /* 背景色を白に指定 */
+}
+
+.output{
+  padding: 20px 0px 30px;
+}
+
+p{
+  font-size: 1.2em;
+  letter-spacing: 0.03em;
+  color: #666;
+  font-weight: 400;
+}
+
+strong{
+  font-size: 1.4em;
+  color: #333;
+}
+
+.smalltext{
+  margin: -15px auto -5px;
+  font-size: 1em;
+}
+
+.buttonText{
+  font-size: 1em;
+}
+
+.buttonSmallText{
+  font-size: 0.8em;
+}
+
+.buttonBigText{
+  font-size: 1.3em;
+}
+
+.buttonText1{
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+
+@media screen and (max-width:400px){
+  .App{
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .inputField{
+    width: 335px;
+  }
+
+  .title{
+    font-size: 22px;
+    margin: 0px auto 0px 10px;
+  }
+
+  header{
+    padding: 5px 10px;
+  }
+  img{
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-height:620px){
+  .input{
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px auto;
+  }
+
+  .inputField{
+    margin: 10px auto;
+    padding: 15px 0px;
+  }
+
+  .output{
+    padding: 5px 0px 30px;
   }
 }
