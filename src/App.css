@@ -13,6 +13,10 @@
   width: 100vw;
   min-height: 100vh;
   background-color: rgb(242, 245, 248);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 header{
@@ -148,8 +152,15 @@ select{
   text-align: right;
 }
 
-hr{
-  max-width: calc(95% - 50px);
+.border1,.bd2{
+  max-width: 85%;
+  border: none; /* デフォルトのボーダーを消す */
+  height: 1px; /* 太さを指定 */
+  background-color: rgb(192, 192, 192); /* 背景色を白に指定 */
+}
+
+.bd2{
+  max-width: 100%;
   border: none; /* デフォルトのボーダーを消す */
   height: 1px; /* 太さを指定 */
   background-color: rgb(192, 192, 192); /* 背景色を白に指定 */

@@ -117,7 +117,7 @@ function App() {
             </div>
           </div>
         </section>
-        <hr/>
+        <hr className="border1"/>
         <section className="output">
           <p>秒速:　<strong>{hitPerSecond} [打/秒]</strong></p>
           <p className="smalltext">(理論値まであと　<strong>{hitDifference} [打]</strong>)</p>

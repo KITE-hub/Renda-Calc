@@ -1,8 +1,7 @@
 import React from 'react';
-import {Button, Link, Dialog, DialogContent, DialogContentText, DialogActions} from '@mui/material';
+import {makeStyles, Button, Link, Dialog, DialogContent, DialogContentText, DialogActions} from '@mui/material';
 
 const GuideButton: React.FC = () => {
-
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -53,7 +52,7 @@ const GuideButton: React.FC = () => {
                 随時で秒速、連打秒数、連打の理論値が確認できる。<br/><br/>
               </p>
 
-            <hr/>
+            <hr className="bd2"></hr>
 
             <h2 className="buttonBigText">計算式</h2>
             <p className="buttonText1">
